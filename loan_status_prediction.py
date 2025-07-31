@@ -15,9 +15,9 @@ file_path = 'loan_data.csv'
 
 if os.path.exists(file_path):
     df = pd.read_csv(file_path)
-    print("✅ Dataset loaded.")
+    print("Dataset loaded.")
 else:
-    raise FileNotFoundError("❌ 'loan_data.csv' not found. Please place it in the same folder.")
+    raise FileNotFoundError("'loan_data.csv' not found. Please place it in the same folder.")
 
 print("Initial shape:", df.shape)
 print("Columns:", df.columns)
@@ -62,7 +62,7 @@ X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2, 
 # Train logistic regression model
 model = LogisticRegression(max_iter=1000)
 model.fit(X_train, y_train)
-print("✅ Model training complete.")
+print("Model training complete.")
 
 # Evaluate model
 y_pred = model.predict(X_test)
@@ -107,4 +107,4 @@ joblib.dump(label_encoders, "label_encoders.pkl")
 if le_target:
     joblib.dump(le_target, "target_encoder.pkl")
 
-print("✅ Outputs saved: model_output.txt, confusion_matrix.png, feature_histograms.png")
+print("Outputs saved: model_output.txt, confusion_matrix.png, feature_histograms.png")
