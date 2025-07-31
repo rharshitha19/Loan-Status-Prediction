@@ -1,6 +1,6 @@
-Loan Status Prediction using Machine Learning
+                                                                                  *Loan Status Prediction using Machine Learning*
 
-Overview
+1) Overview
 
 Loan approval is a critical process in banking and finance, traditionally done through manual evaluation of various applicant details. This project automates that process using **Logistic Regression**, a machine learning algorithm suited for binary classification tasks.
 
@@ -10,7 +10,7 @@ This end-to-end pipeline demonstrates the power of **data preprocessing**, **fea
 
 ---
 
-Project Goals
+2) Project Goals
 
 - Automate loan approval prediction using a data-driven model.
 - Improve decision accuracy and consistency in the financial domain.
@@ -19,7 +19,7 @@ Project Goals
 
 ---
 
-Dataset Description
+3) Dataset Description
 
 The dataset used contains real-world-like information from previous loan applications. Each row represents an applicant and contains:
 
@@ -40,7 +40,7 @@ The dataset used contains real-world-like information from previous loan applica
 
 ---
 
-Tech Stack and Libraries
+4) Tech Stack and Libraries
 
 | Task                     | Library/Tool         |
 |--------------------------|----------------------|
@@ -53,7 +53,7 @@ Tech Stack and Libraries
 
 ---
 
-Workflow and Explanation
+5) Workflow and Explanation
 
 ### 1. Data Loading and Validation
 - The dataset is read using `pandas.read_csv()`.
@@ -93,7 +93,7 @@ Workflow and Explanation
 
 ---
 
-Results
+6) Results
 
 - **Accuracy**: ~81.82%
 - The model performs **very well in identifying approved loans (Y)** but has lower performance on rejected ones.
@@ -101,7 +101,7 @@ Results
 
 ---
 
-Project Structure
+7) Project Structure
 
 loan-status-prediction/
 │
@@ -116,15 +116,15 @@ loan-status-prediction/
 ├── target_encoder.pkl # Encoded target mappings
 └── README.md # Project documentation
 
-Authors:
+8) Authors:
 R Harshitha 
 
 Sreeshma K N 
 
 Sushma N 
 
-Guided by: Ms. Revathi, Assistant Professor
+9) Guided by: Ms. Revathi, Assistant Professor
 Department of AI & ML, CMR Institute of Technology
 
-License:
+10) License:
 This project is developed as part of academic coursework
