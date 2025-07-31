@@ -116,12 +116,7 @@ loan-status-prediction/
 ├── target_encoder.pkl # Encoded target mappings
 └── README.md # Project documentation
 
-8) Authors:
-R Harshitha 
-
-Sreeshma K N 
-
-Sushma N 
+8) Authors: R Harshitha, Sreeshma K N, Sushma N 
 
 9) Guided by: Ms. Revathi, Assistant Professor
 Department of AI & ML, CMR Institute of Technology
