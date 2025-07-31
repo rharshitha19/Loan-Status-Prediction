@@ -1,6 +1,6 @@
- 🧠 Loan Status Prediction using Machine Learning
+Loan Status Prediction using Machine Learning
 
-📖 Overview
+Overview
 
 Loan approval is a critical process in banking and finance, traditionally done through manual evaluation of various applicant details. This project automates that process using **Logistic Regression**, a machine learning algorithm suited for binary classification tasks.
 
@@ -10,7 +10,7 @@ This end-to-end pipeline demonstrates the power of **data preprocessing**, **fea
 
 ---
 
- 🎯 Project Goals
+Project Goals
 
 - Automate loan approval prediction using a data-driven model.
 - Improve decision accuracy and consistency in the financial domain.
@@ -19,7 +19,7 @@ This end-to-end pipeline demonstrates the power of **data preprocessing**, **fea
 
 ---
 
- 📂 Dataset Description
+Dataset Description
 
 The dataset used contains real-world-like information from previous loan applications. Each row represents an applicant and contains:
 
@@ -40,7 +40,7 @@ The dataset used contains real-world-like information from previous loan applica
 
 ---
 
- 🛠️ Tech Stack and Libraries
+Tech Stack and Libraries
 
 | Task                     | Library/Tool         |
 |--------------------------|----------------------|
@@ -53,7 +53,7 @@ The dataset used contains real-world-like information from previous loan applica
 
 ---
 
- 🔁 Workflow and Explanation
+Workflow and Explanation
 
 ### 1. Data Loading and Validation
 - The dataset is read using `pandas.read_csv()`.
@@ -93,7 +93,7 @@ The dataset used contains real-world-like information from previous loan applica
 
 ---
 
- 📈 Results
+Results
 
 - **Accuracy**: ~81.82%
 - The model performs **very well in identifying approved loans (Y)** but has lower performance on rejected ones.
@@ -101,7 +101,7 @@ The dataset used contains real-world-like information from previous loan applica
 
 ---
 
- 📁 Project Structure
+Project Structure
 
 loan-status-prediction/
 │
