@@ -66,25 +66,45 @@ print("✅ Model training complete.")
 
 # Evaluate model
 y_pred = model.predict(X_test)
-print("\nAccuracy:", accuracy_score(y_test, y_pred))
-print("\nClassification Report:\n", classification_report(y_test, y_pred))
+
+accuracy = accuracy_score(y_test, y_pred)
+report = classification_report(y_test, y_pred)
+
+print(f"\nAccuracy: {accuracy:.4f}")
+print("\nClassification Report:\n", report)
+
+# Save evaluation results to a file
+with open("model_output.txt", "w") as f:
+    f.write(f"Accuracy: {accuracy:.4f}\n\n")
+    f.write("Classification Report:\n")
+    f.write(report)
 
 # Confusion matrix
 cm = confusion_matrix(y_test, y_pred)
 
+# Save confusion matrix as image
 plt.figure(figsize=(6, 4))
 sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=['No', 'Yes'], yticklabels=['No', 'Yes'])
 plt.xlabel('Predicted')
 plt.ylabel('Actual')
 plt.title('Confusion Matrix')
 plt.tight_layout()
+plt.savefig("confusion_matrix.png")
 plt.show()
 
-# Histograms
+# Histograms for numeric features (fixed layout issue)
 numeric_cols = df.select_dtypes(include=['int64', 'float64']).columns
-
-df[numeric_cols].hist(figsize=(15, 10), bins=20, edgecolor='black')
+df[numeric_cols].hist(bins=20, edgecolor='black', figsize=(15, 10))
 plt.suptitle("Histograms of Numerical Features", fontsize=16)
 plt.tight_layout()
+plt.savefig("feature_histograms.png")
 plt.show()
 
+# Save model and encoders
+joblib.dump(model, "loan_model.pkl")
+joblib.dump(scaler, "scaler.pkl")
+joblib.dump(label_encoders, "label_encoders.pkl")
+if le_target:
+    joblib.dump(le_target, "target_encoder.pkl")
+
+print("✅ Outputs saved: model_output.txt, confusion_matrix.png, feature_histograms.png")
