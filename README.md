@@ -1,6 +1,6 @@
  🧠 Loan Status Prediction using Machine Learning
 
-## 📖 Overview
+📖 Overview
 
 Loan approval is a critical process in banking and finance, traditionally done through manual evaluation of various applicant details. This project automates that process using **Logistic Regression**, a machine learning algorithm suited for binary classification tasks.
 
@@ -126,5 +126,5 @@ Sushma N
 Guided by: Ms. Revathi, Assistant Professor
 Department of AI & ML, CMR Institute of Technology
 
-License
+License:
 This project is developed as part of academic coursework
